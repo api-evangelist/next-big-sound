@@ -1,8 +1,30 @@
 aid: next-big-sound
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/next-big-sound.png
 name: Next Big Sound
-description: Next Big Sound is a company surfaced as a portfolio company of techstars, uncork-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Next Big Sound was a music-industry analytics company founded in 2009 out of
+  Techstars Boulder that tracked artists' social, streaming, and airplay signals
+  (plays, fans, engagement across Spotify, YouTube, SoundCloud, radio and social
+  platforms) and exposed them through a REST developer API used by labels,
+  managers and media. It was backed by Foundry Group, Uncork Capital (SoftTech
+  VC), Alsop Louie and IA Ventures, and was acquired by Pandora in August 2015.
+  Its analytics became Pandora's artist tools and were folded into the Pandora /
+  SiriusXM Artist Marketing Platform (AMP). The standalone developer API and
+  portal (developer.nextbigsound.com) have been deprecated; nextbigsound.com now
+  resolves to Pandora infrastructure and HTTP redirects to amp.pandora.com. This
+  profile is retained as a network identity record for a defunct/acquired
+  provider — no independent live API surface remains to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/next-big-sound/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +33,22 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: pandora
+x-acquired-date: '2015-08'
+x-redirects-to: http://amp.pandora.com
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Music
+- Analytics
+- Data
+- Metrics
+- Social Media
+- Media
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +58,10 @@ maintainers:
 common:
 - type: Website
   url: https://nextbigsound.com/
+- type: DomainSecurity
+  url: security/next-big-sound-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

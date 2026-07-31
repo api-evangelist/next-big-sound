@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: probed
+source: dig + curl probe of nextbigsound.com (apis.yml Website host)
+notes: >-
+  nextbigsound.com is no longer an independent web/API property. All hosts
+  resolve to a Pandora BigIP (199.116.162.108, nameservers ns2/ns4.pandora.com)
+  and HTTPS is refused on every host; HTTP/80 returns 302 -> http://amp.pandora.com
+  (Pandora Artist Marketing Platform, the successor to Next Big Sound). Only the
+  mail/DNS surface remains active. Absence of records below is real, recorded data.
+hosts:
+  - host: nextbigsound.com
+    https: false
+    https_status: connection-refused
+    tls_version: null
+    hsts: false
+    http_status: 302
+    redirect_to: http://amp.pandora.com
+  - host: www.nextbigsound.com
+    https: false
+    https_status: connection-refused
+  - host: api.nextbigsound.com
+    https: false
+    https_status: connection-refused
+  - host: developer.nextbigsound.com
+    https: false
+    https_status: connection-refused
+domains:
+  - domain: nextbigsound.com
+    dnssec: false
+    caa: []
+    spf: true
+    spf_record: "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all"
+    dmarc: true
+    dmarc_policy: reject
+    mx: [mx0a-0051e301.pphosted.com, mx0b-0051e301.pphosted.com]
+    nameservers: [ns2.pandora.com, ns4.pandora.com]
