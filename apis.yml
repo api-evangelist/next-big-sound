@@ -37,7 +37,7 @@ x-status: acquired
 x-acquired-by: pandora
 x-acquired-date: '2015-08'
 x-redirects-to: http://amp.pandora.com
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
