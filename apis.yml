@@ -44,7 +44,7 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: acquired
+x-status: defunct
 x-acquired-by: pandora
 x-acquired-date: '2015-08'
 x-redirects-to: http://amp.pandora.com
@@ -57,9 +57,10 @@ tags:
 - Analytics
 - Data
 - Metrics
-- Social-Media
+- Social Media
 - Media
 - Acquired
+- Defunct
 tags_raw:
 - Company
 - Music
@@ -69,6 +70,8 @@ tags_raw:
 - Social Media
 - Media
 - Acquired
+- Social-Media
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -85,3 +88,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-defunct-year: 2021
+x-status-reason: acquired-by-pandora-2015-service-shut-down-2021-11-01
+x-status-source: https://musicrow.com/2021/10/pandoras-next-big-sound-service-to-shut-down-nov-1/
